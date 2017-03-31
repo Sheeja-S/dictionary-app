@@ -14,6 +14,10 @@ Details:
 4. The sinatra application uses views, instance variables, instance methods and instance classes and forms.
 5. No known errors.
 
+Heroku website :
+
+https://dry-oasis-98570.herokuapp.com/
+
 Technologies used
 
 1. Ruby
