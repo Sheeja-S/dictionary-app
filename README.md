@@ -11,7 +11,7 @@ Details:
 1. Specs are all passing successfully.
 2. Code has proper indentation.
 3. Variable names are descriptive.
-4. The sinatra application uses views, instance     variables and forms.
+4. The sinatra application uses views, instance variables, instance methods and instance classes and forms.
 5. No known errors.
 
 Technologies used
