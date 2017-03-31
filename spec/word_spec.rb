@@ -10,14 +10,14 @@ describe(Word) do
 describe('#term') do
   it("returns the term") do
     test_word = Word.new("ambitious")
-    expect(test_word.term()).to(eq("ambitious"))
+    expect(test_word.terms()).to(eq("ambitious"))
   end
 end
 
 describe('#contents') do
-  it("it initially returns an empty array of contents for the word") do
+  it("initially returns an empty array of contents for the word") do
     test_word = Word.new("ambitious")
-    expect(test_word.terms()).to(eq([]))
+    expect(test_word.contents()).to(eq([]))
   end
 end
 
@@ -64,6 +64,6 @@ describe('#add_definition') do
   it("adds a new definition to a word") do
     test_word = Word.new("ambitious")
     test_definition = Definition.new("showing a strong desire and determination to succeed" , "People consider Leno ambitious")
-   end  
+   end
   end
 end

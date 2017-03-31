@@ -1,0 +1,13 @@
+<h1>Add definitions to <%= @word.term() %> </h1>
+
+  <form action="/definitions" method="post">
+    <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
+
+    <label for='description'>Definition:</label>
+    <input id='description' name='description' type='text'>
+
+    <label for='usage'> Usage examples:</label>
+    <input id='usage' name='usage' type='text'>
+
+    <button type="submit">Add New Word</button>
+  </form>

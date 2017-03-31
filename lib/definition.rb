@@ -35,7 +35,7 @@ class Definition
     found_definition = nil
     @@definitions.each() do |definition|
       if
-        definition.id().eq?(identification.to_i())
+        definition.id().eql?(identification.to_i())
         found_definition = definition
       end
     end

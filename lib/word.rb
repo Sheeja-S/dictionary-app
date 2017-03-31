@@ -7,7 +7,7 @@ class Word
     @id = @@words.length().+(1)
   end
 
-  define_method(:terms) do
+  define_method(:term) do
     @term
   end
 

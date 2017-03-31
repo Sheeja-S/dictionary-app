@@ -1,0 +1,14 @@
+<h3>Here are all the definitions and examples for the chosen word:</h3>
+
+  <ul>
+    <% @word.contents().each() do |content| %>
+      <li><a href="/definitions/<%= content.id() %>"><li>
+
+      </li><%= content.description() %> </li> <li>
+
+      </li><%= content.usage() %></li></a></li>
+    <% end %>
+  </ul>
+
+  <a href="/words/<%= @word.id%>/definitions/new">Add a new definition</a>
+  <a href="/">Return to Main Page</a>
