@@ -44,7 +44,7 @@ post('/definitions') do
   usage = params.fetch('usage')
   @definition = Definition.new(description,usage)
   @definition.save()
-  @word = 
+  @word =
   Word.find(params.fetch('word_id').to_i())
   @word.add_definition(@definition)
   erb(:success)

@@ -1,14 +1,23 @@
-<h3>Here are all the definitions and examples for the chosen word:</h3>
+<h3>Definitions and examples for the chosen word:</h3>
+
+  <div class = "definition">
 
   <ul>
     <% @word.contents().each() do |content| %>
-      <li><a href="/definitions/<%= content.id() %>"><li>
-
-      </li><%= content.description() %> </li> <li>
-
-      </li><%= content.usage() %></li></a></li>
+      <a href="/definitions/<%= content.id() %>">
+        <div class="defined">
+           Definition: <%= content.description() %>
+           <br />
+           Example: <%= content.usage() %>
+           <br />
+           <br />
+        </div>
     <% end %>
   </ul>
 
+  </div>
+
   <a href="/words/<%= @word.id%>/definitions/new">Add a new definition</a>
+
+  <br>
   <a href="/">Return to Main Page</a>
